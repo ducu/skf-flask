@@ -17,7 +17,7 @@
                             <div *ngIf="submit && form.name.errors" class="invalid-feedback">
                                 <span *ngIf="form.name.errors.required">Required!</span>
                             </div>
-                        </div>                        
+                        </div>
                         <div class="form-group">
                             <label for="version">Version</label>
                             <input type="text" class="form-control" id="version"
@@ -27,7 +27,7 @@
                             <div *ngIf="submit && form.version.errors" class="invalid-feedback">
                                 <span *ngIf="form.version.errors.required">Required!</span>
                             </div>
-                        </div>     
+                        </div>
                         <div class="form-group">
                             <label for="description">Description</label>
                             <textarea type="text" class="form-control" id="description"
@@ -37,11 +37,11 @@
                             <div *ngIf="submit && form.description.errors" class="invalid-feedback">
                                 <span *ngIf="form.description.errors.required">Required!</span>
                             </div>
-                        </div>   
+                        </div>
                         <div class="text-right">
                             <button (click)="createProject()" class="btn btn-success mr-2" type="submit">Create</button>
                             <button [routerLink]="['/projects/manage']" class="btn btn-danger"
-                                type="button">Cancel</button>
+                                type="button">Cancel </button>
                         </div>
                     </form>
                 </div>
