@@ -91,7 +91,8 @@ export class TrainingCourseComponent implements OnInit, OnDestroy {
     const doc = document as any;
     if (doc.fullscreenElement ||
       doc.webkitFullscreenElement ||
-      doc.msFullscreenElement) {
+      doc.msFullscreenElement ||
+      doc.webkitCurrentFullScreenElement) {
       return true;
     } else {
       return false;
